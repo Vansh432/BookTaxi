@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Experience hassle-free travel with Tampo Traveller and Taxi. Our reliable and comfortable transport services are tailored to your needs. Whether you're a solo traveler or a group, we've got you covered. Book now and let us take you to your destination with ease."/>
+    <meta name="keywords" content="Tampo Traveller, Taxi service, Travel transportation, Group transportation, Airport transfers,Comfortable transport,Hassle-free travel,Reliable service,Book online,Solo traveler,Group travel,Tourist destinations,Affordable rates,Local transportation, Professional drivers,Passenger safety,On-time service,Customer satisfaction,Personalized service,Flexible booking options.
+    "/>
+    <title>Aryan Dev Traveller</title>
+    <!--    Add icon-->
+    <link rel="icon" href="./image/Logo.png" type="image/jpeg"/>
+    <!--CSS FILE -->
+    <link rel="stylesheet" href="Style.css">
+    <!--ION ICON SCRIPT-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <!--GOOGLE FONT SCRIPT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+
+    <header>
+        <!--navigation bar -->
+        <nav>
+            <!--logo-->
+            <div class="logo">
+                <img src="./image/Logo.png" alt="">
+            </div>
+            <!--list section like{home,contactus etc}-->
+            <ul>
+                <a href="#">
+                    <li>Home</li>
+                </a>
+                <a href="#service">
+                    <li>Service</li>
+                </a>
+                <a href="#aboutUs">
+                    <li>About Us</li>
+                </a>
+                <a href="#contactUs">
+                    <li>Contact Us</li>
+                </a>
+            </ul>
+
+            <div class="social_media">
+                <ion-icon name="menu-outline" id="menu" onclick="sideBarOpen()"></ion-icon>
+                <a href="#bookForm" id="navBookButton" class="bookTaxi"><span class="bookText"> BOOK A TAXI </span></a>
+            </div>
+
+        </nav>
+
+        <!--Side Bar of Page-->
+
+        <main>
+            <div class="mainText" >
+                <h2 data-aos="slide-up">WELCOME TO ARYANDEVATRAVEL </h2>
+                <h1 data-aos="slide-up">BOOK <span class="importantText"> TAMPO TRAVELLER AND TAXI</span> FOR YOUR RIDE</h1>
+                <p data-aos="slide-up">Aryan Deva Travel is a reliable and affordable transportation provider with a modern fleet of
+                    vehicles that includes sedans, SUVs, vans and Tampo Traveller. They offer exceptional customer
+                    service, flat-rate pricing, and focus on safety and comfort. The company is locally owned and
+                    operated and gives back to the community through charitable donations and volunteer work.</p>
+                <div class="bookButtonS">
+                    <a href="#bookForm" id="bookButton" class="bookTaxi"><span class="bookText"> Book Taxi </span></a>
+                </div>
+            </div>
+        </main>
+    </header>
+    <section id="sideBarTaxi">
+        <aside id="sideBar">
+            <div class="navSideBar">
+                <div class="sideImage">
+                    <img src="./image/Logo.png" alt="">
+                </div>
+                <ion-icon name="close-circle" onclick="closeSideBar()"></ion-icon>
+            </div>
+            <div class="sideBarDescription">
+                <div class="aboutUs">
+                    <h2>About Us</h2>
+                    <p>Aryan Deva Travel is a reliable and affordable transportation provider with a modern fleet of
+                        vehicles that includes sedans, SUVs, vans and Tampo Traveller. They offer exceptional customer
+                        service, flat-rate pricing, and focus on safety and comfort. The company is locally owned and
+                        operated and gives back to the community through charitable donations and volunteer work.
+                    </p>
+                </div>
+                <div class="contactSide">
+                    <h2>Contact Us</h2>
+                    <div class="emailSide  contact">
+                        <h3>Email</h3>
+                        <main>
+                            <ion-icon name="mail-outline"></ion-icon>
+                            <a href="mailto:aryan.devtraveller@aryandevtravel.in">aryan.devtraveller@aryandevtravel.in</a>
+                        </main>
+                    </div>
+                    <div class="numberSide contact">
+                        <h3>Phone</h3>
+                        <main>
+                            <ion-icon name="call-outline"></ion-icon>
+                            <a href="tel:8006603116">+91-8006603116</a>
+                        </main>
+                    </div>
+                    <div class="numberSide contact">
+                        <h3>Address</h3>
+                        <main>
+                            <ion-icon name="location-outline"></ion-icon>
+                            <a href="https://goo.gl/maps/j4ZUZXP84uDcgEom9" target="_blank">Durga Nagar, Bareilly, Uttar Pradesh, India</a>
+                        </main>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </section>
+
+    <section id="bookForm">
+        <form action="https://formsubmit.co/534ad58b67a26d801e1d86ceb8e12481" method="POST" data-aos="slide-up">
+            <h2>Book Your Ride</h2>
+            <div class="inputField">
+                <div class="formBox">
+                    <div class="formContent">
+                        <label for="Name">Name</label> <br>
+                        <div class="inputSet">
+                            <ion-icon name="person-outline"></ion-icon>
+                            <input type="text" name="Name" required placeholder="Name">
+                        </div>
+                    </div>
+                </div>
+                <div class="formBox">
+                    <div class="formContent">
+                        <label for="email">Email</label> <br>
+                        <div class="inputSet">
+                            <ion-icon name="mail-outline"></ion-icon>
+                            <input type="email" name="email" placeholder="Email" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="formBox">
+                    <div class="formContent">
+                        <label for="Number">Number</label> <br>
+                        <div class="inputSet">
+                            <ion-icon name="call-outline"></ion-icon>
+                            <input type="tel" name="Number" placeholder="Number" pattern="[0-9]{10}" maxlength="10"
+                                required>
+                        </div>
+                    </div>
+                </div>
+                <div class="formBox">
+                    <div class="formContent">
+                        <label for="pickLocation">Pick Up Location</label> <br>
+                        <div class="inputSet">
+                            <ion-icon name="location-outline"></ion-icon>
+                            <input type="text" name="pickLocation" required placeholder="Pick Up Location">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="formBox">
+                    <div class="formContent">
+                        <label for="dropLocation">Drop Off Location</label> <br>
+                        <div class="inputSet">
+                            <ion-icon name="location-outline"></ion-icon>
+                            <input type="text" name="dropLocation" placeholder="Drop Location">
+                        </div>
+                    </div>
+                </div>
+                <div class="formBox">
+                    <div class="formContent">
+                        <label for="pickUpDate">Pick Up Date</label> <br>
+
+                        <input type="date" name="pickUpDate" required>
+                    </div>
+                </div>
+                <button class="bookTaxi" type="submit"><span class="bookText"> Book Taxi </span></button>
+            </div>
+        </form>
+    </section>
+
+    <!--service section-->
+    <section id="service">
+        <div class="serviceHeading">
+            <h2 class="headingDesign">SERVICE</h2>
+            <h1>Our Best Services For You</h1>
+        </div>
+        <div id="serviceBox">
+        </div>
+    </section>
+
+
+
+    <!--About Us-->
+
+    <section id="aboutUs">
+        <div class="headingAboutUs serviceHeading">
+            <h2 class="headingDesign" data-aos="slide-up">About Us</h2>
+            <h1 data-aos="slide-up">We Provide Trusted <span> Cab Service</span></h1>
+        </div>
+        <div class="aboutDescription">
+            <div class="aboutImage" data-aos="slide-up">
+                <img src="https://live.themewild.com/taxica/assets/img/about/01.png" alt="">
+            </div>
+            <p data-aos="slide-up">Welcome to Aryan Deva Travel, your reliable transportation provider serving the greater metropolitan
+                area, Aryan Deva Travel has been committed to providing safe, efficient, and affordable transportation
+                to our
+                valued customers.
+                <br>
+                <br>
+                Our fleet of modern, well-maintained vehicles includes <mark>sedans, SUVs, vans and Tampo
+                    Traveller</mark> to meet all of your
+                transportation needs. Whether you need a ride to the airport, a business meeting, or a night out on the
+                town, we've got you covered.
+                <br>
+                <br>
+                At Aryan Deva Travel, our mission is to provide exceptional customer service and to exceed your
+                expectations on every ride. We believe that transportation should be stress-free, reliable, and
+                affordable. That's why we offer flat-rate pricing and never charge surge pricing, even during peak
+                hours.
+                <br>
+                <br>
+                Our team of experienced and professional drivers undergoes rigorous training and background checks to
+                ensure your safety and comfort. We're proud to be a locally owned and operated company, and we're
+                committed to giving back to the community through charitable donations and volunteer work.
+                <br>
+                <br>
+                Thank you for choosing Aryan Deva Travel for your transportation needs. We look forward to serving you!
+
+            </p>
+        </div>
+    </section>
+
+    <!--contact Us-->
+    <section id="contactUs">
+        <div class="headingContactUs serviceHeading">
+            <h2 class="headingDesign" data-aos="slide-up">Contact Us</h2>
+            <h1 data-aos="slide-up">We Provide Trusted</h1>
+        </div>
+        <div class="contactUsDescrip" data-aos="slide-up">
+            <div class="contactUsImage" data-aos="slide-up">
+
+            </div>
+            <div class="contactUsDetails" >
+                <div class="email  contactAsserts" onclick="window.open('mailto:vanshdeep703@gmail.com')" data-aos="slide-up">
+                    <ion-icon name="mail-outline" ></ion-icon>
+                </div>
+                <div class="call contactAsserts" onclick="window.open('tel:8006603116')" target="_self" data-aos="slide-up">
+                    <ion-icon name="call-outline"></ion-icon>
+                </div>
+                <div class="address contactAsserts" onclick="window.open('https://goo.gl/maps/dkBwHtpKeywiM3KP8')" data-aos="slide-up">
+                    <ion-icon name="location-outline"></ion-icon>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer data-aos="slide-up">
+        <div class="companyDetailFooter" >
+            <div class="footerLogoImage">
+                <img src="./image/Logo.png" alt="">
+            </div>
+            <p>
+                Aryan Deva Travel is a reliable and affordable transportation provider with a modern fleet of vehicles
+                that includes sedans, SUVs, and vans. They offer exceptional customer service, flat-rate pricing, and
+                focus on safety and comfort. The company is locally owned and operated and gives back to the community
+                through charitable donations and volunteer work.
+            </p>
+        </div>
+        <div class="quickLink">
+            <h3>Quick Link</h3>
+            <ul>
+                <a href="#">
+                    <li>Home</li>
+                </a>
+                <a href="#service">
+                    <li>Service</li>
+                </a>
+                <a href="#aboutUs">
+                    <li>About</li>
+                </a>
+                <a href="#contactUs">
+                    <li>Contact Us</li>
+                </a>
+            </ul>
+        </div>
+        <div class="contactDetailsFooter">
+            <main>
+                <ion-icon name="mail-outline"></ion-icon>
+                <a href="mailto:aryan.devtraveller@aryandevtravel.in">aryan.devtraveller@aryandevtravel.in</a>
+            </main>
+            <main>
+                <ion-icon name="call-outline"></ion-icon>
+                <a href="tel:8006603116">+91 - 8006603116</a>
+            </main>
+            <main>
+                <ion-icon name="location-outline"></ion-icon>
+                <a href="https://goo.gl/maps/dkBwHtpKeywiM3KP8" target="_blank">Durga Nagar, Bareilly, Uttar Pradesh, India</a>
+            </main>
+        </div>
+        <p id="copyright">© Copyright 2023 <a style="color:#FFB300;" href="mailto:vanshdeep703@gmail.com">vanshdeep703</a> All Rights Reserved.</p>
+    </footer>
+
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 140,
+            duration: 2000,
+            once: true, 
+        });
+       
+    </script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

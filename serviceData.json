@@ -1,0 +1,23 @@
+[
+    {
+        "Img": "https://live.themewild.com/taxica/assets/img/service/01.jpg",
+        "Heading": "Tour Transport",
+        "decription": "There are many variations of passages orem psum available but the majority have suffered alteration in some form by injected."
+    },
+    {
+        "Img": "https://live.themewild.com/taxica/assets/img/service/02.jpg",
+        "Heading": "Airport Transport",
+        "decription": "There are many variations of passages orem psum available but the majority have suffered alteration in some form by injected."
+    },
+    {
+        "Img": "./image/serviceImage.jpg",
+        "Heading": "City Transport",
+        "decription": "There are many variations of passages orem psum available but the majority have suffered alteration in some form by injected."
+    },
+    {
+        "Img": "./image/tampoTraveller.jpg",
+        "Heading": "Tour Transport",
+        "decription": "There are many variations of passages orem psum available but the majority have suffered alteration in some form by injected."
+
+    }
+]
